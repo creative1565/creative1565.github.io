@@ -1,58 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-img {
-    width: 100%;
-    height: auto;
-}
-</style>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        img {
+            width: auto;
+            height: auto;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
+
 <body>
 
-<div data-role="page" id="pageone">
+    <div data-role="page" id="pageone">
 
-  <div data-role="main" class="ui-content">
-    <a href="#pagetwo">
-    <img src="http://i.imgur.com/eWiwkoA.jpg" alt="Baseball Physics">
-        </a>
-  </div>
-</div>
-
-<div data-role="page" id="pagetwo">
-  <div data-role="header">
-    <h1>Baseball Physics</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <div data-role="controlgroup" data-type="vertical">
-      <p>Categories:</p>
-      <a href="#Fastball" class="ui-btn">Fastball</a>
-      <a href="#Curveball" class="ui-btn">Curveball</a>
-      <a href="#Homerun" class="ui-btn">Homerun</a>
-    </div>
-  </div>
-    <div data-role="footer">
-    <h1>&copy; Kenny Li 2016</h1>
-  </div>
-</div>
-
-<div data-role="page" id="Fastball">
-    <div data-role="header">
-        <h1>Baseball Physics</h1>
+        <div data-role="main" class="ui-content">
+            <a href="#Home">
+                <img src="image/img001.jpg" alt="Baseball Physics">
+            </a>
+        </div>
     </div>
 
-    <div data-role="main" class="ui-content">
-        <p>HI</p>
-    </div>
+    <div data-role="page" id="Home">
+        <div data-role="header">
+            <h1>Home</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <p>Categories:</p>
+            <a href="#Fastball" class="ui-btn ui-corner-all">Fastball</a>
+            <a href="#Curveball" class="ui-btn ui-corner-all">Curveball</a>
+            <a href="#Homerun" class="ui-btn ui-corner-all">Homerun</a>
+
+        </div>
         <div data-role="footer">
-    <h1>&copy; Kenny Li 2016</h1>
-  </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#About" data-icon="info">About</a></li>
+                </ul>
+            </div>
+            <h1>&copy; Kenny Li 2016</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="Fastball">
+        <div data-role="header">
+            <h1>Fastball</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsible">
+  <h1>What is a Fastball?</h1>
+<img src="image/fastball.gif" alt="This will display an animated GIF" />
 </div>
+        </div>
+        <div data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Home" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+            <h1>&copy; Kenny Li 2016</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="Curveball">
+        <div data-role="header">
+            <h1>Curveball</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsible">
+  <h1>What is a Curveball??</h1>
+<img src="image/curveball.gif" alt="This will display an animated GIF" />
+</div>
+        </div>
+        <div data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Home" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+            <h1>&copy; Kenny Li 2016</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="Homerun">
+        <div data-role="header">
+            <h1>Homerun</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>HI</p>
+        </div>
+        <div data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Home" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+            <h1>&copy; Kenny Li 2016</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="About">
+        <div data-role="header">
+            <h1>Baseball Physics</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>Hi my name is Kenny Li and I am the creator of this app</p>
+            <p>This is an educational app using baseball to explain a STEM topic</p>
+            <p>STEM is the idea of teaching students in four different categories which are : science, technology, engineering and mathematics </p>
+        </div>
+        <div data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Home" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+            <h1>&copy; Kenny Li 2016</h1>
+        </div>
+    </div>
 
 </body>
+
 </html>
